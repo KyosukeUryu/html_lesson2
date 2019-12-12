@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="header item">
+    </header>
     <section class="item item-l item-maindish">
       <a href="#">
         <img class="image" src="images/image_L_1.jpg" alt="メインディッシュ">
@@ -114,11 +116,13 @@
     </section>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
     <script>
-      new Masonry('body', {
-        itemSelector: '.item',
-        columnWidth: 180,
-        gutter: 4
-      });
+      window.onload = function() {
+        new Masonry('body', {
+          itemSelector: '.item',
+          columnWidth: 180,
+          gutter: 4
+        });
+      };
     </script>
   </body>
 </html>
